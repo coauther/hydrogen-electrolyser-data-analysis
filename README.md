@@ -222,3 +222,7 @@ Future improvements could include:
 
 中文说明：  
 后续可以增加更多实验点、重复实验、加入误差分析，并扩展到 fuel cell series 和 parallel 的数据分析。
+
+## Project Status
+
+Initial data-processing and visualization workflow completed.
