@@ -217,7 +217,9 @@ Experiment data Processing/
 ├── figures/
 │   ├── UI_curve.png
 │   ├── PI_curve.png
-│   └── Efficiency_Current_Curve.png
+│   ├── Efficiency_Current_Curve.png
+│   ├── voltage_current_regression.png
+│   └── voltage_residuals.png
 │
 ├── analysis.py
 └── README.md
