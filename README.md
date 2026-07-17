@@ -126,7 +126,7 @@ The main tools used are:
 
 ## 5. Results
 
-### U-I Characteristic Curve
+### 5.1 U-I Characteristic Relationship
 
 This curve shows the relationship between current and voltage.
 
@@ -136,7 +136,7 @@ The voltage increases as the current increases, which is consistent with the ope
 
 ---
 
-### Power-Current Curve
+### 5.2 Power-Current Relationship
 
 This curve shows the relationship between current and electrical power.
 
@@ -146,7 +146,7 @@ The electrical power consumption increases with current because power is calcula
 
 ---
 
-### Efficiency-Current Curve
+### 5.3 Efficiency-Current Relationship
 
 This curve shows the relationship between current and electrolyser efficiency.
 
@@ -159,6 +159,33 @@ The highest measured efficiency occurs at approximately 0.6 A. At higher current
 
 ---
 
+### 5.4 Linear Regression and Residual Analysis
+
+A first-order regression model was applied to evaluate the
+voltage–current relationship:
+
+\[
+U = RI + U_0
+\]
+
+The fitted model was:
+
+\[
+U = 0.4578I + 1.4340
+\]
+
+![Voltage–current linear regression](figures/voltage_current_regression.png)
+
+The fitted slope corresponds to an effective resistance of
+approximately 0.458 Ω within the tested operating range. The
+coefficient of determination was 0.9969, indicating that the model
+explained 99.69% of the measured voltage variation.
+
+![Residual analysis](figures/voltage_residuals.png)
+
+The residuals ranged approximately from -0.009 V to +0.013 V and
+showed no strong systematic trend.
+
 ## 6. Engineering Interpretation
 
 The results show that the electrolyser does not simply become more efficient at higher current.
@@ -167,8 +194,14 @@ Although higher current increases power consumption, the efficiency reaches a ma
 
 For practical hydrogen systems, efficiency, power demand, heat generation, and measurement uncertainty should all be considered.
 
-中文说明：  
-这说明实际工程中不能只追求更高电流或更高功率，还要考虑效率、热损耗和系统稳定性。合理选择工作点对氢能系统性能很重要。
+The regression results indicate that a linear model provides a
+suitable approximation of the voltage–current relationship within
+the tested operating range. However, because only four measurement
+points were available, additional measurements would be required to
+evaluate nonlinear behaviour more reliably. The fitted voltage
+intercept is an extrapolated model parameter and should not be
+interpreted as a directly measured activation voltage.
+
 
 ---
 
